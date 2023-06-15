@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+  }
+  
+  #navbar {
+    top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-image: url(effect.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    position: fixed;
+  }
+  
+  #navbar a {
+    font-family: Noto Sans;
+    text-decoration: none;
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(212, 249, 249);
+  }
+  
+  #navbar a:hover {
+    color: whitesmoke;
+  }
+  
+  #welcome-section {
+    text-align: center;
+    font-family: noto;
+    background-color:rgb(242, 242, 242);
+    background-image: url(bg.jpg);
+    padding-top: 35vh;
+    font-size: larger;
+    font-weight: 500;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 600px;
+  }
+
+  #projects {
+    font-family: noto;
+    text-align: center;
+    background: rgb(242, 242, 242);
+  }
+
+  #project:hover{
+    cursor: pointer;
+    color: red;
+  }
+  
+  #project:active{
+    color:purple;
+  }
+
+  #profile-link  {
+    text-align: center;
+    font-family: Noto Sans;
+    background: rgb(242, 242, 242);
+  }
+
+  .skill{
+    text-align:left;
+    margin-left: 45%;
+    font-weight: lighter;
+    margin-bottom: 0px;
+  }
+  
+  #achievement{
+    text-align: left;
+    margin-left: 10px;
+    font-family: Noto Sans;
+    background: rgb(242, 242, 242);
+    font-size: large;
+  }
+  #copyright {
+    text-align: center;
+    font-family: Noto Sans;
+    background-image: url(effect.png);
+    color: azure;
+    background-size:cover;
+  }
+  
+  .tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+  }
+
+  .project-tile {
+    background: rgb(242, 242, 242);
+    padding: 2em;
+    color: rgb(0, 0, 0);
+  }
+  
+  .project-tile a {
+    text-decoration: none;
+    color: rgb(20, 20, 250);
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  
+  .responsive {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media all and (max-width: 800px) {
+    #navbar {
+      justify-content: space-around;
+    }
+  
+    .tiles {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    #navbar {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+  
+    #navbar a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  
+    #navbar a:last-of-type {
+      border-bottom: none;
+    }
+  
+    .tiles {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #copyright:hover{
+    cursor: pointer;
+    color:antiquewhite;
+  }
